@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    font-smoothing: antialiased;
+}
+
+.container {
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background: linear-gradient(to right, rgb(0, 94, 255), rgb(0, 113, 128));
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.education {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.education-block {
+    width: 100%;
+    padding: 30px;
+    background-color: #f7f7f7a5;
+    border: 1px solid #dfdfdf;
+    border-radius: 10px;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+}
+
+@keyframes block {
+    0% {
+        transform: scale(1);
+        }
+        50% {
+            transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+                }
+}
+
+header h1 {
+    font-size: 3em;
+}
+
+header h2 {
+    font-size: 1.5em;
+}
+
+section {
+    padding: 50px 0;
+    min-height: 40vh;
+    width: 100%;
+}
+
+section h2 {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+#experience {
+    color: white;
+    background: linear-gradient(to bottom,rgb(153, 190, 255), #000000, rgb(153, 190, 255));
+}
+
+#experience > .container > p {
+    padding-bottom: 10px;
+}
+
+#experience > div > p {
+    border-left: 1px solid white;
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+.skill-wrapper {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+}
+
+.skill {
+    padding: 40px;
+    text-align: center;
+    background-color: #000000;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 1px solid #898989;
+}
+
+.skill:hover {
+    animation: block 0.5s infinite;
+}
+
+.project-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 16px 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: white;
+}
+
+button {
+    width: 100%;
+    padding: 16px 20px;
+    font-weight: 600;
+    background: rgb(0, 0, 0);
+    color: #fff;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #555;
+}
+
+#contact {
+    background-color: #eee;
+}
+
+#contact > div {
+    max-width: 50rem;
+    padding-bottom: 50px;
+    margin: 0 auto;
+}
+
+.project-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.project {
+    width: 100%;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
